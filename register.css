@@ -10,9 +10,6 @@ body {
 #body{
   display:flex;
 }
-#portal{
-	background-image:
-}
 .rlform {
     /*variable*/
     --color-primary: #ff9800;
@@ -23,6 +20,11 @@ body {
     margin: 10px 0 0 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+}
+
+.star{
+	padding-top:0px;
+	color:red;
 }
 
 .rlform .rlform-wrapper {
@@ -82,13 +84,13 @@ body {
     float: right;
 }
 
-.rlform .rlform-box .rlform-input {
+.rlform-input {
     background-color: var(--color-grey);
     color: var(--color-drak);
-    border: none;
+    border: solid gray 1px;
     border-radius: 3px;
     padding: 15px 20px;
-    width: 100%;
+    width: 96%;
     outline: 0;
 }
 

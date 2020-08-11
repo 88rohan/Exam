@@ -6,7 +6,7 @@ include("register_db.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="rlform.css">
+    <link rel="stylesheet" href="register.css">
 	<link rel = "stylesheet" type = "text/css" href = "common.css">
     <title>Register</title>
 </head>
@@ -36,25 +36,31 @@ include("register_db.php");
                                 <?php }
                             ?>
                         </div>
+						<span class="star">* required field</span>
                         <div class="rlform-group">
                         
-                            <input type="text" name="fullName" placeholder="Full Name"class="rlform-input" id="fullName" required>            
+                            <input type="text" name="fullName" placeholder="Full Name"class="rlform-input" id="fullName" required>  
+							<span class="star">*</span>
                         </div>
                         <div class="rlform-group">
                             
-                            <input type="email" placeholder="Email"name="email" class="rlform-input" id="email" required>            
+                            <input type="email" placeholder="Email"name="email" class="rlform-input" id="email" required>
+							<span class="star">*</span>
                         </div>
 						<div class="rlform-group">
                             
-							<input type="digit"placeholder="Mobile Number" maxlength="10" minlength="10" name="mobile" class="rlform-input" id="number" required>           
+							<input type="digit"placeholder="Mobile Number" maxlength="10" minlength="10" name="mobile" class="rlform-input" id="number" required> 
+							<span class="star">*</span>
                         </div>
                         <div class="rlform-group">
                             
                             <input type="password" placeholder="Password" name="newPassword" class="rlform-input" id="newPass" required>
+							<span class="star">*</span>
                         </div>
                         <div class="rlform-group">
                            
-                            <input type="password" placeholder="Re-type" name="conformPassword" class="rlform-input" id="conformPass" required>
+                            <input type="password" placeholder="Conform Password" name="conformPassword" class="rlform-input" id="conformPass" required>
+							<span class="star">*</span>
 							<div id="passmatch"><?php 
                                 if (@$_GET['passErr']==true) 
                                 {?>
