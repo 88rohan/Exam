@@ -26,6 +26,7 @@ body {
     margin-left: 15%;
 	border-radius: 0px;
 	cursor: pointer;
+	outline: 0;
 }
 
 @media screen and(max-width: 320px) {
